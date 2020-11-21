@@ -58,3 +58,10 @@ button.text:not(:disabled):active {
   color           : #0c9696;
   background-color: rgba(0, 0, 0, 0);
 }
+
+@media screen and (max-width: 480px) {
+  button {
+    font-size: 16px;
+    padding  : 6px 24px;
+  }
+}
