@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+@import './reset.css';
+
+@import './general.css';
+@import './layout.css';
+
+@import './components/steps.css';
+@import './components/card.css';
+@import './components/background.css';
+@import './components/session.css';
+
+@import './elements/button.css';
+@import './elements/input.css';

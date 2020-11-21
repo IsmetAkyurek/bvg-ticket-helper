@@ -1,0 +1,11 @@
+.session {
+  text-align: center;
+}
+
+.session .session__buttons {
+  margin-top: 24px;
+}
+
+.session .session__buttons button {
+  margin: 0 4px;
+}

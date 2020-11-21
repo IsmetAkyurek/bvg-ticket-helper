@@ -1,0 +1,150 @@
+.steps {
+  position: relative;
+  width   : 100%;
+}
+
+.steps .steps__step {
+  opacity   : 0;
+  position  : absolute;
+  z-index   : -1;
+  top       : 0;
+  left      : 0;
+  transition: opacity .5s;
+}
+
+.steps .steps__step.steps__step--active {
+  opacity : 1;
+  position: absolute;
+  position: relative;
+  z-index : 0;
+}
+
+.steps .steps__step .steps__step-question {
+  font-weight  : bold;
+  line-height  : 1.5;
+  font-size    : 16px;
+  text-align   : center;
+  margin-bottom: 40px;
+}
+
+.steps .steps__step .steps__step-input input {
+  display   : block;
+  margin    : auto;
+  width     : 200px;
+  max-width : 100%;
+  text-align: center;
+}
+
+.steps .steps__step .steps__step-input input[type=number] {
+  width: 100px;
+}
+
+.steps .steps__step .steps__step-buttons {
+  text-align: center;
+}
+
+.steps .steps__step .steps__step-buttons button {
+  height: 34px;
+  margin: 0 8px;
+}
+
+.steps .steps__step .steps__step-navigation {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.steps .steps__step .steps__step-navigation button {
+  margin: 0 4px;
+}
+
+.steps .steps__result {
+  text-align: center;
+}
+
+.steps .steps__result h2 {
+  font-weight  : bold;
+  margin-bottom: 16px;
+}
+
+.steps .steps__result .steps__result-summary {
+  border-bottom : 1px solid #f0f0f0;
+  margin-bottom : 24px;
+  padding-bottom: 16px;
+}
+
+.steps .steps__result .steps__result-info {
+  display    : flex;
+  line-height: 1.5;
+  max-width  : 280px;
+  margin     : auto;
+  text-align : left;
+}
+
+.steps .steps__result .steps__result-info .steps__info-count {
+  width      : 40px;
+  font-weight: bold;
+}
+
+.steps .steps__result .steps__result-tickets {
+  border-bottom : 1px solid #f0f0f0;
+  margin-bottom : 24px;
+  padding-bottom: 16px;
+}
+
+.steps .steps__result .steps__result-ticket {
+  display    : flex;
+  line-height: 1.5;
+  max-width  : 280px;
+  margin     : auto;
+  text-align : left;
+}
+
+.steps .steps__result .steps__result-ticket .steps__result-count {
+  font-weight: bold;
+  width      : 40px;
+}
+
+.steps .steps__result .steps__result-ticket .steps__result-price {
+  margin-left: auto;
+}
+
+.steps .steps__result .steps__result-total {
+  display    : flex;
+  align-items: center;
+  max-width  : 280px;
+  margin     : auto;
+  margin-top : 20px;
+}
+
+.steps .steps__result .steps__result-total .steps__result-total-text {
+  font-weight : bold;
+  padding-left: 40px;
+}
+
+.steps .steps__result .steps__result-total .steps__result-total-price {
+  font-weight: bold;
+  font-size  : 24px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .steps .steps__step .steps__step-question {
+    margin-bottom: 20px;
+    font-size    : 14px;
+  }
+
+  .steps .steps__step .steps__step-input input[type=number] {
+    width: auto;
+  }
+
+  .steps .steps__step .steps__step-buttons button {
+    display: block;
+    width  : 100%;
+    margin : 8px 0;
+  }
+
+  .steps .steps__result button {
+    display: block;
+    width  : 100%;
+  }
+}

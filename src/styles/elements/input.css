@@ -1,0 +1,23 @@
+input {
+  border       : 1px solid #d9d9d9;
+  font-family  : 'Montserrat', sans-serif;
+  outline      : none;
+  transition   : all .3s;
+  border-radius: 4px;
+  padding      : 8px 24px;
+}
+
+input:hover {
+  border-color: rgba(20, 167, 167, 0.5);
+}
+
+input:focus {
+  border-color: #14a7a7;
+  box-shadow  : 0 0 0 2px rgba(20, 167, 167, .2)
+}
+
+@media screen and (max-width: 480px) {
+  input {
+    font-size: 16px;
+  }
+}

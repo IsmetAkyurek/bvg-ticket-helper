@@ -1,0 +1,12 @@
+.content {
+  margin: auto;
+  width : calc(100% - 16px);
+}
+
+.content.content--md {
+  max-width: 600px;
+}
+
+.bold {
+  font-weight: bold;
+}
