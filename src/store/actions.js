@@ -1,15 +1,17 @@
+import types from "./types";
+
 const actions = {
   nextStep: (keyword, value) => (dispatch) => {
-    dispatch({ type: 'NEXT_STEP', keyword, value });
+    dispatch({ type: types.NEXT_STEP, keyword, value });
   },
   prevStep: () => (dispatch) => {
-    dispatch({ type: 'PREV_STEP' });
+    dispatch({ type: types.PREV_STEP });
   },
   reset: () => (dispatch) => {
-    dispatch({ type: 'RESET_STEPS' });
+    dispatch({ type: types.RESET_STEPS });
   },
   setSession: (data) => (dispatch) => {
-    dispatch({ type: 'SET_SESSION', data });
+    dispatch({ type: types.SET_SESSION, data });
   },
 };
 
